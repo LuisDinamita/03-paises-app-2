@@ -1,1 +1,40 @@
-<p>por-pais works!</p>
+<h2>Por País</h2>
+<hr>
+<div class="row">
+    <div class="col">
+        <form>
+            <input type="text" class="form-control" name="termino" [(ngModel)]="termino")] placeholder="Buscar País...">
+        
+        </form>
+    </div>
+</div>
+<hr>
+<div class="alert alert-danger">
+    No se encontró el termino: ABC123
+</div>
+<div class="row">
+        <div class="col">
+        <table class="table tablet-hover">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Bandera</th>
+                    <th>Nombre</th>
+                    <th>Población</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Bandera</td>
+                    <td>Nombre</td>
+                    <td>12345667</td>
+                    <td>
+                        <a href="/pais/mex" >ver mas...</a>
+                    </td>
+
+        </table>
+
+        </div>
+</div>
