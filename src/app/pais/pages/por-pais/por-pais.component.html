@@ -2,39 +2,17 @@
 <hr>
 <div class="row">
     <div class="col">
-        <form>
-            <input type="text" class="form-control" name="termino" [(ngModel)]="termino")] placeholder="Buscar País...">
-        
-        </form>
+        <app-pais-input (onEnter)="buscar"></app-pais-input>
     </div>
 </div>
 <hr>
-<div class="alert alert-danger">
-    No se encontró el termino: ABC123
+<div  *ngIf="hayError" class="alert alert-danger">
+    No se encontró el termino: {{ termino }}
 </div>
-<div class="row">
+<div *ngIf="paises.length!==0" class="row" >
         <div class="col">
-        <table class="table tablet-hover">
-            <thead>
-                <tr>
-                    <th>#</th>
-                    <th>Bandera</th>
-                    <th>Nombre</th>
-                    <th>Población</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Bandera</td>
-                    <td>Nombre</td>
-                    <td>12345667</td>
-                    <td>
-                        <a href="/pais/mex" >ver mas...</a>
-                    </td>
-
-        </table>
+     <app-pais-table [paises]="paises"></app-pais-table>
+        
 
         </div>
 </div>
