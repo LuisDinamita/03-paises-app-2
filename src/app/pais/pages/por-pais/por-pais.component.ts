@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { PaisService } from '../../services/pais.service';
 import { Country } from '../../interfaces/pais.interface';
-import { PaisTableComponent } from '../../components/pais-table/pais-table.component';
-
 
 @Component({
   selector: 'app-por-pais',
@@ -32,5 +30,11 @@ export class PorPaisComponent implements OnInit {
      }
    )}
 
+   sugerencias(termino:string){
+    console.log(termino);
+     //console.log(termino);
+     //ToDo crear sugerencias
+     
+   }
 
 }
