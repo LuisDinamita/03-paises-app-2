@@ -34,6 +34,9 @@
             <li class= "list-group-item list-group-item-primary">
                 <strong>Inicio de semana: </strong> {{pais[0].startOfWeek}}
             </li>
+            <li class= "list-group-item list-group-item-primary">
+                <strong>Mapa: </strong> <a href='{{pais[0].maps.googleMaps}}'>{{pais[0].name.common}}</a>
+            </li>
         </ul>
             </div>
         </div>
@@ -45,4 +48,6 @@
             </span>
         </div>
     </div>
+
+    
 </ng-template>
