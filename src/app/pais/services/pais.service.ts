@@ -6,14 +6,9 @@ import { Country } from '../interfaces/pais.interface';
 @Injectable({
   providedIn: 'root'
 })
-export class PaisService {
-  buscarRegion(region: string) {
-    throw new Error('Method not implemented.');
-  }
- 
+export class PaisService { 
  
     
-
   private _apiUrl: string = 'https://restcountries.com/v3.1';
   
   get params() {
